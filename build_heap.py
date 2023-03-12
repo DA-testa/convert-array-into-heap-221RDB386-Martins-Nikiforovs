@@ -31,7 +31,7 @@ def main():
   if "F" in inpt:
     fileName = input()
     if "a" not in fileName:
-      with open(str(fileName), mode="r") as file:
+      with open(str("./tests/" +fileName), mode="r") as file:
         n = int(file.readline())
         data = list(map(int, file.readline().split()))
     else:
